@@ -197,6 +197,118 @@ header{
     margin: 0;
 }
 
+@media screen and (min-width: 480px) {
+
+body{
+font-size: 1.2rem;
+}
+
+.navigacia-menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.island1,
+.island2,
+.island3{
+    max-width: 100%;
+    height: auto;
+}
+
+.foto-sekcia{
+    position: relative;
+    color: white;
+}
+
+.foto-sekcia p{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fotogaleria-fotky{
+    margin: 0;
+    flex-basis: 50%;
+}
+
+.fotogaleria-fotky img{
+    height: auto;
+}
+
+.fotogaleria-fotky{
+        position: relative;
+        overflow: hidden;
+    }
+
+.popisok-fotky{
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 1rem;
+}
+
+.fotogaleria-fotky:hover .popisok-fotky,
+.popisok-fotky p{
+    bottom: 4rem;
+    opacity: 1;
+    background-color:#F0FFFF;
+    color:black;
+}
+
+
+/* skusala som urobit tu animaciu na fotkach, ale po XY pokusoch som zlyhala a nedala som to */
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
