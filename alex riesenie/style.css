@@ -34,7 +34,6 @@ header{
 }
 
 .hlavicka-nadpis {
-    font-family:'Raleway', sans-serif; 
     font-size: 5rem;
     padding-bottom: 1.5rem;
     margin: -1rem 0 1rem 0;
@@ -43,7 +42,6 @@ header{
 }
 
 .hlavicka-text{
-    font-family:'Raleway', sans-serif; 
     font-size: 1.1rem;
     font-weight: 700;
     margin: -1rem 0 1rem 0;
@@ -52,7 +50,6 @@ header{
 }
 
 .hlavicka-autor{
-    font-family:'Raleway', sans-serif; 
     font-size: 0.9rem;
     font-weight: 500;
     font-style: italic;
@@ -72,7 +69,6 @@ header{
 /* Navigácia - menu*/
 
 .navigacia-menu{
-    font-family:'Raleway', sans-serif;
     display:flex;
     flex-direction: column;
     text-align: center;
@@ -109,6 +105,7 @@ header{
 .text-sekcia{
     padding: 1.5rem;
     padding-top:0.5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .foto-sekcia {
@@ -128,24 +125,22 @@ header{
 }
 
 .sekcia-nadpis{
-    padding-left: 1.5rem;
-    padding-bottom: 0;
-    padding-top: 1.5rem;
+    padding:2rem;
+    padding-left: 1;
     margin:0;
     font-weight: 800;
     font-size: 1.7rem;
+    position: relative;
 }
 
-.modra-ciara {
-    border: 2.5px solid #629edb;
-    background-color: #629edb;
-    width: 100px;
-    margin: 1.5rem;
-    margin-left: -1.5rem;
-}
-
-.tucne{
-   font-weight: 900;
+.sekcia-nadpis::after{
+        position: absolute;
+        content: '';
+        width: 100px;
+        background-color: #629edb;
+        left: 0.5rem;
+        top:5rem;
+        height: 4px;
 }
 
 /* FOTOGALERIA */
@@ -170,6 +165,7 @@ header{
     font-weight: 900;
     font-size: 0.9rem;
     color:grey;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .popisky a{
@@ -188,7 +184,6 @@ header{
     font-size: 0.8rem;
     color:#C0C0C0;
     font-weight: bold;
-    font-family: 'Raleway', sans-serif;
 }
 
 .paticka a {
@@ -211,9 +206,12 @@ font-size: 1.2rem;
     justify-content: space-evenly;
 }
 
-.island1,
-.island2,
-.island3{
+.sekcia-nadpis::after{
+    left:0.5rem;
+    top:7rem;
+}
+
+.island-foto{
     max-width: 100%;
     height: auto;
 }
@@ -280,6 +278,11 @@ body {
     background-color: #f6f1f1;
 }
 
+.sekcia-nadpis::after{
+    left:0.5rem;
+    top:8rem;
+}
+
 .hlavicka {
     z-index: -1;
     min-height: 450px;
@@ -329,10 +332,6 @@ body {
     margin-left: 4rem;
     z-index:1;
     box-shadow: -5px 5px 15px 2px rgba(38, 36, 36, 0.103);
-}
-
-.modra-ciara{
-    margin-left: 1.5rem;
 }
 
 .sekcia-nadpis{
